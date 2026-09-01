@@ -93,6 +93,10 @@ export default async function decorate(block) {
       const item = el('li');
       const link = el('a', 'nav-link', `<span>${a.textContent.trim()}</span>`);
       link.href = a.href;
+      if (new URL(a.href, window.location).pathname === window.location.pathname) {
+        link.classList.add('is-current');
+        link.setAttribute('aria-current', 'page');
+      }
       item.append(link);
       ul.append(item);
     });

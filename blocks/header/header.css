@@ -104,6 +104,7 @@ header .nav-link {
   color: var(--text-color);
 }
 
+header .nav-link.is-current { color: var(--text-muted); }
 header .nav-link:hover,
 header .sticky-bar .s-nav a:hover { color: var(--color-maroon); }
 header .nav-toggle { display: none; border: 0; background: none; }
