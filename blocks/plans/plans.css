@@ -25,13 +25,13 @@ main .section.plans-container .default-content-wrapper h2 { margin-bottom: 20px;
 }
 
 .plans .subs-ribbon p { color: #fff; line-height: 26px; margin: 0 0 13px; }
-.plans .subs-card { background: #fff; padding: 10px; min-height: 485px; }
+.plans .subs-card { background: #fff; padding: 10px; min-height: 485px; display: flex; flex-direction: column; align-items: flex-start; }
 .plans .subs-card--fav { border: 2px solid var(--color-maroon); }
 .plans .subs-card h3 { margin-bottom: 10px; }
 .plans .subs-card .card-desc { margin-bottom: 20px; }
 .plans .subs-checks p { margin-bottom: 13px; min-height: 26px; }
 .plans .subs-checks strong { font-weight: 700; }
-.plans .subs-cta { padding: 7px 0 10px 10px; }
+.plans .subs-cta { margin-top: auto; padding: 7px 0 10px 10px; }
 
 /* first card has no ribbon: reserve its height so card tops align (live spacer) */
 .plans .subs-slot:first-child .subs-card { margin-top: 49px; }
