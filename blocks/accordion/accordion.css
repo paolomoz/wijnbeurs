@@ -47,3 +47,51 @@ main .section.accordion-container .default-content-wrapper {
   .accordion .faq-wrap { padding: 0 15px; }
   .accordion .faq-inner { padding: 0; }
 }
+
+/* faq-panel variant (het-vatencollectief): light-blue rounded panel look */
+main .section.accordion-container:has(.accordion.faq-panel) {
+  max-width: 1280px;
+  margin: 0 auto 36px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+main .section.accordion-container:has(.accordion.faq-panel)::before { content: none; }
+
+main .section.accordion-container:has(.accordion.faq-panel) > div {
+  background: #d2e1e6;
+}
+
+main .section.accordion-container:has(.accordion.faq-panel) > .default-content-wrapper {
+  border-radius: 32px 32px 0 0;
+  padding: 40px 40px 24px;
+  margin: 0;
+  max-width: none;
+}
+
+main .section.accordion-container:has(.accordion.faq-panel) > .default-content-wrapper h2 {
+  font-family: var(--body-font-family);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 34px;
+  margin: 0;
+}
+
+main .section.accordion-container:has(.accordion.faq-panel) > .accordion-wrapper {
+  border-radius: 0 0 32px 32px;
+  padding: 0 40px 40px;
+}
+
+.accordion.faq-panel .faq-inner { padding: 0; }
+.accordion.faq-panel .faq-item { border-bottom: 0; padding-top: 2px; }
+.accordion.faq-panel .faq-q { color: var(--text-color); }
+.accordion.faq-panel .faq-q::before { filter: none; }
+
+@media (width <= 768px) {
+  main .section.accordion-container:has(.accordion.faq-panel) { padding: 0 8px; }
+  main .section.accordion-container:has(.accordion.faq-panel) > .default-content-wrapper { padding: 24px 24px 12px; border-radius: 24px 24px 0 0; }
+  main .section.accordion-container:has(.accordion.faq-panel) > .accordion-wrapper { padding: 0 24px 24px; border-radius: 0 0 24px 24px; }
+  main .section.voordeel .default-content-wrapper { min-height: 0; }
+  main .section.voordeel p:has(img) { position: static; }
+  main .section.voordeel img { width: 100%; }
+}

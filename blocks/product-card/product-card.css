@@ -95,8 +95,8 @@
 }
 
 /* het-vatencollectief buy-box section: prose left, card right */
-main .section.proefpakket { max-width: 1280px; margin: 0 auto; padding: 12px 20px 0; box-sizing: border-box; }
-main .section.proefpakket { display: flex; gap: 20px; align-items: flex-start; padding-left: 60px; padding-right: 60px; }
+main .section.proefpakket { max-width: 1280px; margin: 0 auto; box-sizing: border-box; }
+main .section.proefpakket { display: flex; gap: 20px; align-items: flex-start; padding: 20px 60px 0; }
 main .section.proefpakket > .default-content-wrapper { flex: 1; }
 main .section.proefpakket > .product-card-wrapper { flex: 0 0 387px; max-width: 387px; }
 main .section.proefpakket h2 { font-family: var(--body-font-family); font-size: 28px; font-weight: 600; line-height: 34px; margin: 0 0 8px; }

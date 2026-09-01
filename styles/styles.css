@@ -371,6 +371,12 @@ main .section.tinted-green p.button-wrapper { margin-top: 8px; }
 main .section.divider-line { max-width: 1240px; margin: 0 auto; padding: 30px 20px; box-sizing: border-box; }
 main .section.divider-line hr { border: 0; border-top: 1px solid var(--color-cream-text); margin: 0; }
 
+main .section.voordeel .default-content-wrapper { position: relative; min-height: 430px; box-sizing: border-box; }
+main .section.voordeel p { max-width: 452px; }
+main .section.voordeel h2 { margin-top: 24px; }
+main .section.voordeel p:has(img) { position: absolute; right: 40px; top: 47px; max-width: none; margin: 0; }
+main .section.voordeel img { width: 557px; height: auto; border-radius: 0; }
+
 @media (width <= 768px) {
   main .section.campaign-quote { padding: 32px 15px; }
   main .section.anchor-chips .default-content-wrapper { flex-direction: column; align-items: center; gap: 4px; }
