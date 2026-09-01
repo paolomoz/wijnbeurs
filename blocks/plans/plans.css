@@ -31,7 +31,7 @@ main .section.plans-container .default-content-wrapper h2 { margin-bottom: 20px;
 .plans .subs-card .card-desc { margin-bottom: 20px; }
 .plans .subs-checks p { margin-bottom: 13px; min-height: 26px; }
 .plans .subs-checks strong { font-weight: 700; }
-.plans .subs-cta { margin-top: auto; padding: 7px 0 10px 10px; }
+.plans .subs-cta { margin-top: auto; padding: 7px 0 33px 10px; }
 
 /* first card has no ribbon: reserve its height so card tops align (live spacer) */
 .plans .subs-slot:first-child .subs-card { margin-top: 49px; }
