@@ -1,6 +1,6 @@
 /* tabs — model selection (replica; lifted from hv-lift-1440) */
 
-main .section.tabs-container { background: var(--light-color); padding: 0 10px 38px; }
+main .section.tabs-container { background: var(--light-color); padding: 0 10px 54px; }
 
 main .section.tabs-container .default-content-wrapper {
   box-sizing: border-box;

@@ -363,6 +363,8 @@ main .section.tinted-green .default-content-wrapper {
   padding: 24px 40px 40px;
 }
 
+main .section.tinted-green:not(:has(img)) .default-content-wrapper { padding-bottom: 49px; }
+
 main .section.tinted-green h2 { font-family: var(--body-font-family); font-size: 28px; font-weight: 600; line-height: 34px; margin: 16px 0 16px; }
 main .section.tinted-green p { margin: 0 0 13px; max-width: 940px; }
 main .section.tinted-green img { border-radius: 8px; }
@@ -379,7 +381,7 @@ main .section.divider-line {
 main .section.divider-line::after { content: ""; display: block; border-top: 1px solid var(--color-cream-text); }
 main .section.divider-line hr { border: 0; border-top: 1px solid var(--color-cream-text); margin: 0; }
 
-main .section.tinted-green:has(img[alt^="Volumekorting"]) .default-content-wrapper { position: relative; min-height: 430px; box-sizing: border-box; }
+main .section.tinted-green:has(img[alt^="Volumekorting"]) .default-content-wrapper { position: relative; min-height: 457px; box-sizing: border-box; }
 main .section.tinted-green:has(img[alt^="Volumekorting"]) p { max-width: 452px; }
 main .section.tinted-green:has(img[alt^="Volumekorting"]) h2 { margin-top: 24px; }
 main .section.tinted-green:has(img[alt^="Volumekorting"]) p:has(img) { position: absolute; right: 40px; top: 47px; max-width: none; margin: 0; }

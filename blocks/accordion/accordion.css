@@ -95,3 +95,5 @@ main .section.accordion-container:has(.accordion.faq-panel) > .accordion-wrapper
   main .section.voordeel p:has(img) { position: static; }
   main .section.voordeel img { width: 100%; }
 }
+
+.accordion.faq-panel .faq-q { padding: 11px 0 11px 25px; }

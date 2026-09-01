@@ -23,7 +23,7 @@
 .product-card .product-image-container { display: inline-block; }
 .product-card .product-item-photo img { width: 279px; height: 174px; display: inline-block; object-fit: contain; }
 .product-card .crobox-medal { display: none; }
-.product-card .product-item-details { padding: 0 16px; }
+.product-card .product-item-details { padding: 0 16px; margin-top: 24px; }
 
 .product-card .product-item-details-top { display: none; }
 
@@ -47,7 +47,7 @@
 }
 
 .product-card .product-attr-item::before { display: none; }
-.product-card .product-item-form { padding: 0 16px 16px; margin-top: 12px; }
+.product-card .product-item-form { padding: 0 16px 28px; margin-top: 12px; }
 .product-card .price-box { display: flex; align-items: flex-start; height: 45px; }
 .product-card .old-price { display: none; }
 .product-card .special-price { margin-left: 0; }
@@ -96,7 +96,7 @@
 
 /* het-vatencollectief buy-box section: prose left, card right */
 main .section.proefpakket { max-width: 1280px; margin: 0 auto; box-sizing: border-box; }
-main .section.proefpakket { display: flex; gap: 20px; align-items: flex-start; padding: 20px 60px 0; }
+main .section.proefpakket { display: flex; gap: 20px; align-items: flex-start; padding: 20px 60px 34px; }
 main .section.proefpakket > .default-content-wrapper { flex: 1; }
 main .section.proefpakket > .product-card-wrapper { flex: 0 0 387px; max-width: 387px; }
 main .section.proefpakket h2 { font-family: var(--body-font-family); font-size: 28px; font-weight: 600; line-height: 34px; margin: 0 0 8px; }
