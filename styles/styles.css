@@ -370,7 +370,8 @@ main .section.tinted-green p { margin: 0 0 13px; max-width: 940px; }
 main .section.tinted-green img { border-radius: 8px; }
 main .section.tinted-green p.button-wrapper { margin-top: 8px; }
 
-main .section.divider-line {
+/* empty section defeats :empty hiding, but only once loaded (else CLS) */
+main .section.divider-line[data-section-status='loaded'] {
   display: block !important;
   max-width: 1240px;
   margin: 0 auto;
