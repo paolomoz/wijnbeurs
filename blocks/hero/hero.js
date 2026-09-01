@@ -12,54 +12,52 @@
  */
 function decorateCampaign(block) {
   // campaign variant — centered white card over full-bleed bg
-  // (het-vatencollectief; schema § hero). Rows classified by content:
-  // bg image → band layer; logo image (2nd image) → card top; paragraphs →
-  // card copy; button rows: buttonized links cloned per authored paragraph.
+  // (het-vatencollectief; schema § hero). First image = bg layer, second =
+  // card logo; remaining cells render IN AUTHORED ORDER (copy, button rows,
+  // fine print) so the composition matches the source.
   const cells = [...block.querySelectorAll(':scope > div > div')];
-  const pics = [];
-  const paras = [];
-  const buttonRows = [];
-  cells.forEach((cell) => {
-    const m = cell.querySelector('picture, img');
-    if (m && !cell.querySelector('a')) { pics.push(m.closest('picture') || m); return; }
-    if (cell.querySelector('a.button, strong a, em a')) { buttonRows.push(cell); return; }
-    if (cell.textContent.trim()) paras.push(cell);
-  });
   const band = document.createElement('div');
   band.className = 'hero-bg hero-bg-campaign';
-  if (pics[0]) {
-    const layer = document.createElement('div');
-    layer.className = 'hero-bg-layer';
-    const img = pics[0].cloneNode(true);
-    const raw = img.matches('img') ? img : img.querySelector('img');
-    if (raw) { raw.setAttribute('loading', 'eager'); raw.setAttribute('fetchpriority', 'high'); }
-    layer.append(img);
-    band.append(layer);
-  }
   const card = document.createElement('div');
   card.className = 'hero-campaign-card';
-  if (pics[1]) {
-    const fig = document.createElement('figure');
-    fig.append(pics[1].cloneNode(true));
-    card.append(fig);
-  }
-  const copy = document.createElement('div');
-  copy.className = 'hero-campaign-copy';
-  paras.forEach((cell) => {
+  let imgSeen = 0;
+  cells.forEach((cell) => {
+    const m = cell.querySelector('picture, img');
+    if (m && !cell.querySelector('a')) {
+      imgSeen += 1;
+      if (imgSeen === 1) {
+        const layer = document.createElement('div');
+        layer.className = 'hero-bg-layer';
+        const img = (m.closest('picture') || m).cloneNode(true);
+        const raw = img.matches('img') ? img : img.querySelector('img');
+        if (raw) { raw.setAttribute('loading', 'eager'); raw.setAttribute('fetchpriority', 'high'); }
+        layer.append(img);
+        band.append(layer);
+      } else {
+        const fig = document.createElement('figure');
+        fig.append((m.closest('picture') || m).cloneNode(true));
+        card.append(fig);
+      }
+      return;
+    }
+    if (cell.querySelector('a.button, strong a, em a')) {
+      const rowEl = document.createElement('div');
+      rowEl.className = 'hero-campaign-buttons';
+      [...cell.querySelectorAll('p')].forEach((pp) => rowEl.append(pp.cloneNode(true)));
+      if (!rowEl.children.length) [...cell.childNodes].forEach((n) => rowEl.append(n.cloneNode(true)));
+      card.append(rowEl);
+      return;
+    }
+    if (!cell.textContent.trim()) return;
+    const copy = document.createElement('div');
+    copy.className = 'hero-campaign-copy';
     [...cell.children].forEach((n) => copy.append(n.cloneNode(true)));
-    if (!cell.children.length && cell.textContent.trim()) {
+    if (!cell.children.length) {
       const p = document.createElement('p');
       p.textContent = cell.textContent.trim();
       copy.append(p);
     }
-  });
-  card.append(copy);
-  buttonRows.forEach((cell) => {
-    const rowEl = document.createElement('div');
-    rowEl.className = 'hero-campaign-buttons';
-    [...cell.querySelectorAll('p')].forEach((pp) => rowEl.append(pp.cloneNode(true)));
-    if (!rowEl.children.length) [...cell.childNodes].forEach((n) => rowEl.append(n.cloneNode(true)));
-    card.append(rowEl);
+    card.append(copy);
   });
   band.append(card);
   const wrap = document.createElement('div');
