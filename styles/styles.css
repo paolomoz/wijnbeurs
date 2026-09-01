@@ -368,7 +368,15 @@ main .section.tinted-green p { margin: 0 0 13px; max-width: 940px; }
 main .section.tinted-green img { border-radius: 8px; }
 main .section.tinted-green p.button-wrapper { margin-top: 8px; }
 
-main .section.divider-line { max-width: 1240px; margin: 0 auto; padding: 30px 20px; box-sizing: border-box; }
+main .section.divider-line {
+  display: block !important;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+
+main .section.divider-line::after { content: ""; display: block; border-top: 1px solid var(--color-cream-text); }
 main .section.divider-line hr { border: 0; border-top: 1px solid var(--color-cream-text); margin: 0; }
 
 main .section.voordeel .default-content-wrapper { position: relative; min-height: 430px; box-sizing: border-box; }
