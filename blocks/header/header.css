@@ -29,6 +29,7 @@ header .usp-item em {
 
 /* header main */
 header .header-main {
+  box-sizing: border-box;
   max-width: 1280px;
   margin: 0 auto;
   padding: 10px 20px 0;
