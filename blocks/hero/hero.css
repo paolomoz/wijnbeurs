@@ -45,6 +45,7 @@
 
 /* ---------- campaign variant (het-vatencollectief; lifted) ---------- */
 .hero.campaign { margin-top: -20px; }
+.hero.campaign .hero-wrap { max-width: none; }
 
 .hero.campaign .hero-bg-campaign {
   height: 631px;
@@ -79,6 +80,7 @@
 .hero.campaign .hero-campaign-copy h1 strong { font-weight: 700; }
 .hero.campaign .hero-campaign-buttons { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; padding: 5px 0; }
 .hero.campaign .hero-campaign-buttons .button-wrapper { margin: 0; }
+.hero.campaign .hero-campaign-buttons + .hero-campaign-buttons a.button { background: var(--dark-color); }
 .hero.campaign a.button.secondary {
   background: var(--dark-color);
   border: 0;
@@ -88,6 +90,7 @@
 
 @media (width <= 768px) {
   .hero.campaign { margin-top: -20px; }
+.hero.campaign .hero-wrap { max-width: none; }
 
 .hero.campaign .hero-bg-campaign { height: auto; }
   .hero.campaign .hero-campaign-card { width: auto; border-radius: 32px; margin: 15px; }
