@@ -62,18 +62,19 @@ footer .footer-bottom {
 footer .footer-pay { width: 100%; padding: 17px 0 28px; border-bottom: 1px solid var(--color-cream-text); }
 footer .footer-pay ul { display: flex; align-items: center; height: 34px; margin: 0; padding: 0; list-style: none; }
 footer .footer-pay li { margin-right: 34px; display: flex; align-items: center; }
-/* live pins explicit per-icon sizes inline; replicated per position */
-footer .footer-pay li:nth-child(1) img { width: 71px; height: 27px; }
-footer .footer-pay li:nth-child(2) img { width: 40px; height: 27px; }
-footer .footer-pay li:nth-child(3) img { width: 69px; height: 28px; }
-footer .footer-pay li:nth-child(4) img { width: 28px; height: 28px; }
-footer .footer-pay li:nth-child(5) img { width: 57px; height: 16px; }
-footer .footer-pay li:nth-child(6) img { width: 28px; height: 28px; }
-footer .footer-pay li:nth-child(7) img { width: 28px; height: 28px; }
-footer .footer-pay li:nth-child(8) img { width: 34px; height: 28px; }
-footer .footer-pay li:nth-child(9) img { width: 31px; height: 27px; }
-footer .footer-pay li:nth-child(10) img { width: 70px; height: 19px; }
-footer .footer-pay li:nth-child(11) img { width: 93px; height: 28px; }
+/* per-icon sizes lifted from live inline styles, keyed to the authored alt
+   (icon-intrinsic — alts survive the pipeline; replaces per-position rules) */
+footer .footer-pay img[alt="iDEAL-Wero"] { width: 71px; height: 27px; }
+footer .footer-pay img[alt="MasterCard"] { width: 40px; height: 27px; }
+footer .footer-pay img[alt="Klarna"] { width: 69px; height: 28px; }
+footer .footer-pay img[alt="PayPal"] { width: 28px; height: 28px; }
+footer .footer-pay img[alt="Visa"] { width: 57px; height: 16px; }
+footer .footer-pay img[alt="Apple Pay"] { width: 28px; height: 28px; }
+footer .footer-pay img[alt="American Express"] { width: 28px; height: 28px; }
+footer .footer-pay img[alt="SKAL"] { width: 34px; height: 28px; }
+footer .footer-pay img[alt="PostNL"] { width: 31px; height: 27px; }
+footer .footer-pay img[alt="NIX 18"] { width: 70px; height: 19px; }
+footer .footer-pay img[alt="Thuiswinkel Waarborg"] { width: 93px; height: 28px; }
 footer .footer-social { width: 248px; padding: 43px 0 37px; }
 footer .footer-social ul { display: flex; gap: 30px; margin: 0; padding: 0; list-style: none; }
 footer .footer-social a { display: block; height: 25px; }
