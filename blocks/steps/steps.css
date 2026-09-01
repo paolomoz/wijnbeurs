@@ -3,6 +3,7 @@
 main .section.steps-container { padding: 40px 20px; margin-bottom: 10px; }
 
 main .section.steps-container .default-content-wrapper {
+  box-sizing: border-box;
   max-width: var(--container-max);
   margin: 0 auto 31px;
   padding: 0 123px;

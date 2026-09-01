@@ -17,9 +17,9 @@ import { loadFragment } from '../fragment/fragment.js';
 
 const SVG = {
   ham: '<svg viewBox="0 0 24 24" width="22" height="22"><path d="M3 6h18M3 12h18M3 18h18" stroke="#555" stroke-width="2"/></svg>',
-  search: '<svg class="search-ico" viewBox="0 0 24 24" fill="none"><circle cx="10.5" cy="10.5" r="6.5" stroke="#555" stroke-width="2"/><path d="M15.5 15.5 21 21" stroke="#555" stroke-width="2"/></svg>',
-  account: '<svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="#555" stroke-width="1.8"/><path d="M4.5 20c1.5-3.6 4.4-5.2 7.5-5.2s6 1.6 7.5 5.2" stroke="#555" stroke-width="1.8"/></svg>',
-  cart: '<svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16l-1.5 12h-13L4 7Z" stroke="#555" stroke-width="1.8"/><path d="M8.5 10V5.8A3.4 3.4 0 0 1 12 2.5a3.4 3.4 0 0 1 3.5 3.3V10" stroke="#555" stroke-width="1.8"/></svg>',
+  search: '<span class="search-ico" aria-hidden="true"></span>',
+  account: '<span class="hicon icon-account" aria-hidden="true"></span>',
+  cart: '<span class="hicon icon-cart" aria-hidden="true"></span>',
 };
 
 function el(tag, className, html) {

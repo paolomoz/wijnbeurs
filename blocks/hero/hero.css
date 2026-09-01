@@ -1,5 +1,7 @@
 /* hero — wijnabonnement header band (replica; lifted values) */
 
+.hero .hero-wrap { max-width: 1280px; padding: 0; }
+
 .hero .hero-bg {
   position: relative;
   height: 394px;
