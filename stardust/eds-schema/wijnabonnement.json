@@ -1,0 +1,798 @@
+{
+ "source": "http://localhost:8792/wijnabonnement-proposed.html",
+ "width": 1280,
+ "profile": "eds",
+ "sections": [
+  {
+   "section": "hero",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Wijnabonnement"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Met onze wijnabonnementen heb je altijd lekkere wijn in huis. Je kiest wat bij je past en wij selecteren de lekkerste wijnen voor je. Alle wijnen worden gratis bij je geleverd!"
+    },
+    {
+     "role": "cta",
+     "order": 2,
+     "text": "Bekijk de abonnementen ➝",
+     "href": "#exp"
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "De voordelen"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "✓"
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "Altijd heerlijke wijn in huis"
+    },
+    {
+     "role": "body",
+     "order": 6,
+     "text": "✓"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "Altijd gratis thuis geleverd"
+    },
+    {
+     "role": "body",
+     "order": 8,
+     "text": "✓"
+    },
+    {
+     "role": "body",
+     "order": 9,
+     "text": "Gemakkelijk pauzeren, wijzigen of opzeggen"
+    },
+    {
+     "role": "heading",
+     "order": 10,
+     "text": "Wijnabonnement"
+    },
+    {
+     "role": "body",
+     "order": 11,
+     "text": "Met onze wijnabonnementen heb je altijd lekkere wijn in huis. Je kiest wat bij je past en wij selecteren de lekkerste wijnen voor je. Alle wijnen worden gratis bij je thuis geleverd!"
+    },
+    {
+     "role": "body",
+     "order": 12,
+     "text": "De voordelen"
+    },
+    {
+     "role": "body",
+     "order": 13,
+     "text": "✓"
+    },
+    {
+     "role": "body",
+     "order": 14,
+     "text": "Altijd heerlijke wijn in huis"
+    },
+    {
+     "role": "body",
+     "order": 15,
+     "text": "✓"
+    },
+    {
+     "role": "body",
+     "order": 16,
+     "text": "Altijd gratis thuis geleverd"
+    },
+    {
+     "role": "body",
+     "order": 17,
+     "text": "✓"
+    },
+    {
+     "role": "body",
+     "order": 18,
+     "text": "Gemakkelijk pauzeren, wijzigen of opzeggen"
+    },
+    {
+     "role": "cta",
+     "order": 19,
+     "text": "Bekijk de abonnementen ➝",
+     "href": "#ervaar"
+    }
+   ],
+   "imgCount": 0,
+   "repeats": [
+    {
+     "unitSelector": "DIV.hero-col",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 2
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "P.",
+     "count": 3,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 2
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "steps",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "In 4 stappen naar jouw gemak"
+    },
+    {
+     "role": "heading",
+     "order": 1,
+     "text": "Wat past bij jou?"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Wil je elk kwartaal verrast worden of altijd jouw favoriete wijn in huis hebben?"
+    },
+    {
+     "role": "heading",
+     "order": 3,
+     "text": "Bevestig je wensen"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "Hoe vaak wil je genieten en hoeveel flessen wil je per keer ontvangen?"
+    },
+    {
+     "role": "heading",
+     "order": 5,
+     "text": "De laatste details"
+    },
+    {
+     "role": "body",
+     "order": 6,
+     "text": "Log in of maak een account aan en laat jouw bezorggegevens achter."
+    },
+    {
+     "role": "heading",
+     "order": 7,
+     "text": "Genieten maar!"
+    },
+    {
+     "role": "body",
+     "order": 8,
+     "text": "Jouw wijn wordt gratis bij je geleverd op de door jou gekozen dag. Geniet ervan!"
+    },
+    {
+     "role": "body",
+     "order": 9,
+     "text": "Wil je elk kwartaal verrast worden of altijd jouw favoriete wijn in huis hebben?"
+    },
+    {
+     "role": "body",
+     "order": 10,
+     "text": "Hoe vaak wil je genieten en hoeveel flessen wil je per keer ontvangen?"
+    },
+    {
+     "role": "body",
+     "order": 11,
+     "text": "Log in of maak een account aan en laat jouw bezorggegevens achter."
+    },
+    {
+     "role": "body",
+     "order": 12,
+     "text": "Jouw wijn wordt gratis bij je geleverd op de door jou gekozen dag. Geniet ervan!"
+    }
+   ],
+   "imgCount": 4,
+   "repeats": [
+    {
+     "unitSelector": "DIV.steps-col",
+     "count": 4,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 2,
+      "textRuns": 2
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.steps-cap",
+     "count": 4,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    }
+   ]
+  },
+  {
+   "section": "plans",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Ervaar nu zelf het gemak van onze wijnabonnementen"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Meest gekozen"
+    },
+    {
+     "role": "heading",
+     "order": 2,
+     "text": "Proefpanelbox"
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "De Proefpanelbox wordt door ons eigen proefpanel samengesteld met bijzondere wijnen en nieuwe ontdekkingen."
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "✔ Elk kwartaal (4 keer per jaar) verrast worden."
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "Samengesteld door ons proefpanel & afgestemd op het seizoen."
+    },
+    {
+     "role": "body",
+     "order": 6,
+     "text": "✓"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "Altijd 89 euro per pakket (10 flessen)."
+    },
+    {
+     "role": "body",
+     "order": 8,
+     "text": "✓"
+    },
+    {
+     "role": "body",
+     "order": 9,
+     "text": "Nooit meer keuzestress."
+    },
+    {
+     "role": "body",
+     "order": 10,
+     "text": "✓"
+    },
+    {
+     "role": "body",
+     "order": 11,
+     "text": "Gratis thuis geleverd."
+    },
+    {
+     "role": "body",
+     "order": 12,
+     "text": "✓"
+    },
+    {
+     "role": "body",
+     "order": 13,
+     "text": "Flexibel: altijd te wijzigen, pauzeren of op te zeggen."
+    },
+    {
+     "role": "body",
+     "order": 14,
+     "text": "✓"
+    },
+    {
+     "role": "cta",
+     "order": 15,
+     "text": "Abonneer nu ➝",
+     "href": "/proefpanelbox-wijnabonnement"
+    },
+    {
+     "role": "heading",
+     "order": 16,
+     "text": "Favorieten Abonnement"
+    },
+    {
+     "role": "body",
+     "order": 17,
+     "text": "Heb je al een favoriete wijn van wijnbeurs.nl en wil je deze altijd in huis hebben tegen de hoogste korting?"
+    },
+    {
+     "role": "body",
+     "order": 18,
+     "text": "Altijd jouw favoriet in huis: 4, 6 of 12 leveringen per jaar."
+    },
+    {
+     "role": "body",
+     "order": 19,
+     "text": "✓"
+    },
+    {
+     "role": "body",
+     "order": 20,
+     "text": "Keuze uit ruim 20 wijnen."
+    },
+    {
+     "role": "body",
+     "order": 21,
+     "text": "✓"
+    },
+    {
+     "role": "body",
+     "order": 22,
+     "text": "Altijd voor de laagste prijs."
+    },
+    {
+     "role": "body",
+     "order": 23,
+     "text": "✓"
+    },
+    {
+     "role": "body",
+     "order": 24,
+     "text": "Elke levering bestaat uit minimaal 12 flessen."
+    },
+    {
+     "role": "body",
+     "order": 25,
+     "text": "✓"
+    },
+    {
+     "role": "body",
+     "order": 26,
+     "text": "Gratis thuis geleverd."
+    },
+    {
+     "role": "body",
+     "order": 27,
+     "text": "✓"
+    },
+    {
+     "role": "body",
+     "order": 28,
+     "text": "Flexibel: altijd te wijzigen, pauzeren of op te zeggen."
+    },
+    {
+     "role": "body",
+     "order": 29,
+     "text": "✓"
+    },
+    {
+     "role": "body",
+     "order": 30,
+     "text": "Snelle levering."
+    },
+    {
+     "role": "body",
+     "order": 31,
+     "text": "✓"
+    },
+    {
+     "role": "cta",
+     "order": 32,
+     "text": "Abonneer nu ➝",
+     "href": "/favorieten-wijnabonnement"
+    },
+    {
+     "role": "cta",
+     "order": 33,
+     "text": "Abonneer nu ➝",
+     "href": "/proefpanelbox-wijnabonnement"
+    },
+    {
+     "role": "cta",
+     "order": 34,
+     "text": "Abonneer nu ➝",
+     "href": "/favorieten-wijnabonnement"
+    },
+    {
+     "role": "heading",
+     "order": 35,
+     "text": "Ervaar nu zelf het gemak van onze wijnabonnementen"
+    },
+    {
+     "role": "heading",
+     "order": 36,
+     "text": "Proefpanelbox"
+    },
+    {
+     "role": "body",
+     "order": 37,
+     "text": "De Proefpanelbox wordt door ons eigen proefpanel samengesteld met bijzondere wijnen en nieuwe ontdekkingen."
+    },
+    {
+     "role": "body",
+     "order": 38,
+     "text": "Elk kwartaal (4 keer per jaar) verrast worden."
+    },
+    {
+     "role": "body",
+     "order": 39,
+     "text": "✓"
+    },
+    {
+     "role": "body",
+     "order": 40,
+     "text": "Samengesteld door ons proefpanel & afgestemd op het seizoen."
+    },
+    {
+     "role": "body",
+     "order": 41,
+     "text": "✓"
+    },
+    {
+     "role": "body",
+     "order": 42,
+     "text": "Altijd 89 euro per pakket (10 flessen)."
+    },
+    {
+     "role": "body",
+     "order": 43,
+     "text": "✓"
+    },
+    {
+     "role": "body",
+     "order": 44,
+     "text": "Gratis thuis geleverd."
+    },
+    {
+     "role": "body",
+     "order": 45,
+     "text": "✓"
+    },
+    {
+     "role": "body",
+     "order": 46,
+     "text": "Flexibel: altijd te wijzigen, pauzeren of op te zeggen."
+    },
+    {
+     "role": "body",
+     "order": 47,
+     "text": "✓"
+    },
+    {
+     "role": "cta",
+     "order": 48,
+     "text": "Abonneer nu ➝",
+     "href": "/proefpanelbox-wijnabonnement"
+    },
+    {
+     "role": "body",
+     "order": 49,
+     "text": "Meest gekozen"
+    },
+    {
+     "role": "heading",
+     "order": 50,
+     "text": "Favorieten Abonnement"
+    },
+    {
+     "role": "body",
+     "order": 51,
+     "text": "Heb je al een favoriete wijn van de Wijnbeurs en wil je deze altijd in huis hebben tegen de hoogste korting?"
+    },
+    {
+     "role": "body",
+     "order": 52,
+     "text": "Altijd jouw favoriet in huis: 4, 6 of 12 leveringen per jaar."
+    },
+    {
+     "role": "body",
+     "order": 53,
+     "text": "✓"
+    },
+    {
+     "role": "body",
+     "order": 54,
+     "text": "Keuze uit ruim 20 wijnen."
+    },
+    {
+     "role": "body",
+     "order": 55,
+     "text": "✓"
+    },
+    {
+     "role": "body",
+     "order": 56,
+     "text": "Altijd voor de laagste prijs."
+    },
+    {
+     "role": "body",
+     "order": 57,
+     "text": "✓"
+    },
+    {
+     "role": "body",
+     "order": 58,
+     "text": "Gratis thuis geleverd."
+    },
+    {
+     "role": "body",
+     "order": 59,
+     "text": "✓"
+    },
+    {
+     "role": "body",
+     "order": 60,
+     "text": "Flexibel: altijd te wijzigen, pauzeren of op te zeggen."
+    },
+    {
+     "role": "body",
+     "order": 61,
+     "text": "✓"
+    },
+    {
+     "role": "body",
+     "order": 62,
+     "text": "Vandaag besteld = morgen al genieten."
+    },
+    {
+     "role": "body",
+     "order": 63,
+     "text": "✓"
+    },
+    {
+     "role": "cta",
+     "order": 64,
+     "text": "Abonneer nu ➝",
+     "href": "/favorieten-wijnabonnement"
+    }
+   ],
+   "imgCount": 0,
+   "repeats": [
+    {
+     "unitSelector": "DIV.subs-card",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 14
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.subs-cta-col",
+     "count": 2,
+     "unit": {
+      "headings": 0,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "DIV.subs-card",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 1,
+      "imgs": 0,
+      "textRuns": 13
+     },
+     "uniform": false
+    }
+   ]
+  },
+  {
+   "section": "photo-text",
+   "items": [
+    {
+     "role": "body",
+     "order": 0,
+     "text": "Kies voor gemak"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Met een wijnabonnement"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Een wijnabonnement biedt ontzettend veel voordelen. Geen keuzestress meer over welke wijn je nu weer in huis moet halen en zo vul je gedurende het jaar je wijnvoorraad weer aan. Je kunt ook nog eens zelf beslissen hoe vaak je de wijn thuis wil laten leveren."
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "Kies voor gemak"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "Met een wijnabonnement"
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "Een wijnabonnement biedt ontzettend veel voordelen. Geen keuzestress meer over welke wijn je nu weer in huis moet halen en zo vul je gedurende het jaar je wijnvoorraad weer aan. Je kunt ook nog eens zelf beslissen hoe vaak je de wijn thuis wil laten leveren."
+    }
+   ],
+   "imgCount": 0,
+   "repeats": [
+    {
+     "unitSelector": "DIV.quote-col",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 3
+     },
+     "uniform": true
+    },
+    {
+     "unitSelector": "DIV.",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    },
+    {
+     "unitSelector": "DIV.",
+     "count": 2,
+     "unit": {
+      "headings": 1,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 1
+     },
+     "uniform": false
+    }
+   ]
+  },
+  {
+   "section": "accordion",
+   "items": [
+    {
+     "role": "heading",
+     "order": 0,
+     "text": "Veelgestelde vragen"
+    },
+    {
+     "role": "body",
+     "order": 1,
+     "text": "Moet ik verzendkosten betalen voor mijn abonnement?"
+    },
+    {
+     "role": "body",
+     "order": 2,
+     "text": "Nee, de verzendkosten voor alle abonnementen zijn altijd gratis."
+    },
+    {
+     "role": "body",
+     "order": 3,
+     "text": "Wanneer wordt mijn Favorieten Abonnement bezorgd?"
+    },
+    {
+     "role": "body",
+     "order": 4,
+     "text": "Jouw eerste Favorieten Abonnement wordt direct de volgende werkdag bij je bezorgd. De datum van je eerste levering, is de datum waarop je elke keer je abonnement kunt verwachten."
+    },
+    {
+     "role": "body",
+     "order": 5,
+     "text": "je bevestigt op 29 augustus je abonnement met 12 leveringen per jaar. Op 30 of 31 augustus wordt de wijn bij je thuisbezorgd. Vervolgens wordt rond 29 september je volgende levering in het magazijn klaargezet. Vanaf dan kun je de wijn binnen 1 à 2 werkdagen bij je thuis verwachten. Enkele dagen vooraf ontvang je hierover nog een aankondiging via de mail."
+    },
+    {
+     "role": "body",
+     "order": 6,
+     "text": "Voorbeeld:"
+    },
+    {
+     "role": "body",
+     "order": 7,
+     "text": "Uiteraard ontvang je ook een Track & Trace code nadat je pakket het magazijn heeft verlaten. Wij raden je aan de te downloaden voor de meest recente updates en om het bezorgmoment te wijzigen wanneer gewenst."
+    },
+    {
+     "role": "cta",
+     "order": 8,
+     "text": "PostNL app",
+     "href": "https://www.postnl.nl/campagnes/postnl-app/"
+    },
+    {
+     "role": "body",
+     "order": 9,
+     "text": "Wanneer wordt mijn Proefpanelbox bezorgd?"
+    },
+    {
+     "role": "body",
+     "order": 10,
+     "text": "De Proefpanelbox wordt op vier vaste momenten in het jaar uitgeleverd: in maart, juni, september en december. Enkele dagen vooraf ontvang je hierover nog een aankondiging via de mail."
+    },
+    {
+     "role": "body",
+     "order": 11,
+     "text": "Kan ik mijn abonnement wijzigen, pauzeren of stopzetten?"
+    },
+    {
+     "role": "body",
+     "order": 12,
+     "text": "Ja, geen enkel probleem. Pas het zelf gemakkelijk aan binnen jouw account. Of neem contact op via of bel naar ."
+    },
+    {
+     "role": "cta",
+     "order": 13,
+     "text": "contact@wijnbeurs.nl",
+     "href": "mailto:contact@wijnbeurs.nl"
+    },
+    {
+     "role": "body",
+     "order": 14,
+     "text": "+31 85 888 7271"
+    },
+    {
+     "role": "body",
+     "order": 15,
+     "text": "Hoe werkt het met de betaling van mijn abonnement?"
+    },
+    {
+     "role": "body",
+     "order": 16,
+     "text": "Jouw eerste Favorieten Abonnement reken je via de winkelwagen af met een betaalmethode naar keuze, zoals iDeal. De volgende leveringen betaal je via een automatische incasso of factuur."
+    },
+    {
+     "role": "body",
+     "order": 17,
+     "text": "Jouw Proefpanelbox betaal je via een factuur."
+    },
+    {
+     "role": "body",
+     "order": 18,
+     "text": "Kan ik een kortingscode gebruiken voor mijn abonnement?"
+    },
+    {
+     "role": "body",
+     "order": 19,
+     "text": "Kortingscodes zijn niet in te wisselen op bestellingen met een wijnabonnement."
+    }
+   ],
+   "imgCount": 0,
+   "repeats": [
+    {
+     "unitSelector": "DIV.faq-item",
+     "count": 6,
+     "unit": {
+      "headings": 0,
+      "ctas": 0,
+      "imgs": 0,
+      "textRuns": 2
+     },
+     "uniform": false
+    }
+   ]
+  }
+ ]
+}

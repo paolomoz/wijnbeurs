@@ -1,0 +1,48 @@
+/* accordion — FAQ (replica; lifted). Section head is default content. */
+
+main .section.accordion-container { margin-bottom: 52px; }
+
+main .section.accordion-container .default-content-wrapper {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 226px 24px 227px;
+}
+
+.accordion .faq-inner { padding: 0 206px 0 207px; }
+
+.accordion .faq-item {
+  border-bottom: 1px solid var(--color-cream-text);
+  padding-top: 1px;
+}
+
+.accordion .faq-item:last-of-type { padding-bottom: 2px; }
+
+.accordion .faq-q {
+  position: relative;
+  padding: 10px 0 10px 25px;
+  font-weight: 700;
+  line-height: 26px;
+  cursor: pointer;
+}
+
+.accordion .faq-q::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 18px;
+  width: 16px;
+  height: 10px;
+  background: url('/icons/chevron-down.svg') no-repeat center / 16px 10px;
+}
+
+.accordion .faq-item.open .faq-q::before { transform: rotate(180deg); }
+.accordion .faq-a { display: none; padding: 0 0 10px 25px; }
+.accordion .faq-item.open .faq-a { display: block; }
+.accordion .faq-a p { margin-bottom: 13px; }
+
+@media (width <= 768px) {
+  main .section.accordion-container { margin-bottom: 0; }
+  main .section.accordion-container .default-content-wrapper { padding: 0 15px 24px; }
+  .accordion .faq-wrap { padding: 0 15px; }
+  .accordion .faq-inner { padding: 0; }
+}

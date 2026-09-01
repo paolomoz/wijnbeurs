@@ -1,0 +1,47 @@
+/* plans — subscription cards (replica; lifted). The SECTION carries the cream
+   band; the head h2 is default content styled in place. */
+
+main .section.plans-container > div {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+main .section.plans-container .default-content-wrapper {
+  background: var(--light-color);
+  padding: 70px 113px 0;
+}
+
+main .section.plans-container .default-content-wrapper h2 { margin-bottom: 20px; }
+
+.plans .subs-inner { background: var(--light-color); padding: 0 113px 20px; }
+.plans .subs-cards { display: flex; gap: 20px; align-items: flex-start; }
+.plans .subs-slot { width: 497px; }
+
+.plans .subs-ribbon {
+  background: var(--color-maroon);
+  padding: 5px 0;
+  text-align: center;
+}
+
+.plans .subs-ribbon p { color: #fff; line-height: 26px; margin: 0 0 13px; }
+.plans .subs-card { background: #fff; padding: 10px; min-height: 485px; }
+.plans .subs-card--fav { border: 2px solid var(--color-maroon); }
+.plans .subs-card h3 { margin-bottom: 10px; }
+.plans .subs-card .card-desc { margin-bottom: 20px; }
+.plans .subs-checks p { margin-bottom: 13px; min-height: 26px; }
+.plans .subs-checks strong { font-weight: 700; }
+.plans .subs-cta { padding: 7px 0 10px 10px; }
+
+/* first card has no ribbon: reserve its height so card tops align (live spacer) */
+.plans .subs-slot:first-child .subs-card { margin-top: 49px; }
+
+@media (width <= 768px) {
+  main .section.plans-container > div { padding: 0 15px; }
+  main .section.plans-container .default-content-wrapper { padding: 10px 10px 0; text-align: center; }
+  .plans .subs-inner { padding: 0 10px 20px; }
+  .plans .subs-cards { display: block; }
+  .plans .subs-slot { width: 100%; }
+  .plans .subs-slot:first-child .subs-card { margin-top: 0; }
+  .plans .subs-card { min-height: 0; margin-bottom: 27px; }
+}

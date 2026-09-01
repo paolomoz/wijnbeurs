@@ -1,20 +1,140 @@
-footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+/* footer — wijnbeurs.nl chrome (replica; lifted values) */
+
+footer .footer.block { background: #fff; }
+
+/* usp bar (white variant) */
+footer .footer-usp { background: #fff; border-top: 1px solid var(--color-cream-text); }
+
+footer .usp-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1240px;
+  margin: 0 auto;
+  height: 72px;
+  padding: 0;
+  list-style: none;
 }
 
-footer .footer > div {
-  margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+footer .usp-item { display: flex; align-items: center; font-size: 14px; line-height: 22px; }
+footer .usp-item picture { display: inline-flex; }
+footer .usp-item img { width: 16px; height: 13px; margin-right: 12px; }
+footer .usp-item em { color: var(--color-green-usp); font-weight: 600; font-style: normal; }
+
+/* dark menus */
+footer .footer-dark { background: var(--dark-color); }
+footer .footer-menus { max-width: 1280px; margin: 0 auto; padding: 20px 20px 0; display: flex; }
+footer .footer-menus-inner { display: flex; width: 1240px; margin: 0 auto; padding-bottom: 35px; }
+footer .footer-col { width: 248px; }
+
+footer .footer-title {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 26px;
+  color: #fff;
+  margin-bottom: 19px;
 }
 
-footer .footer p {
+footer .footer-title a { color: #fff; }
+footer .footer-links { margin: 0; padding: 0; list-style: none; }
+footer .footer-links li { margin-bottom: 4px; }
+
+footer .footer-links a {
+  display: block;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--color-cream-text);
+}
+
+/* bottom strip */
+footer .footer-bottom-wrap { background: #fff; }
+
+footer .footer-bottom {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+footer .footer-pay { width: 100%; padding: 17px 0 28px; border-bottom: 1px solid var(--color-cream-text); }
+footer .footer-pay ul { display: flex; align-items: center; height: 34px; margin: 0; padding: 0; list-style: none; }
+footer .footer-pay li { margin-right: 34px; display: flex; align-items: center; }
+footer .footer-pay img { max-height: 28px; width: auto; }
+footer .footer-social { width: 248px; padding: 43px 0 37px; }
+footer .footer-social ul { display: flex; gap: 30px; margin: 0; padding: 0; list-style: none; }
+footer .footer-social a { display: block; height: 25px; }
+footer .footer-social img { width: 25px; height: 25px; }
+footer .footer-legal { flex: 1; }
+
+footer .footer-legal ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 35px;
+  padding: 44px 0 0;
   margin: 0;
+  list-style: none;
 }
 
-@media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
+footer .footer-legal a { font-size: 14px; line-height: 15px; color: var(--text-color); }
+footer .recaptcha-note { display: none; }
+
+/* ---------- mobile (≤767) ---------- */
+@media (width <= 767px) {
+  footer .usp-list { height: 57px; justify-content: center; padding: 0 15px; }
+  footer .usp-item + .usp-item { display: none; }
+  footer .footer-menus { padding: 0 15px; }
+  footer .footer-menus-inner { display: block; width: 100%; padding-bottom: 13px; }
+  footer .footer-col { width: 100%; border-top: 1px solid rgb(235 229 210 / 25%); }
+  footer .footer-col:first-child { border-top: 0; }
+
+  footer .footer-title {
+    margin: 0;
+    padding: 24px 0;
+    font-size: 23px;
+    line-height: 19px;
+    position: relative;
+    cursor: pointer;
   }
+
+  footer .footer-title::after {
+    content: '';
+    position: absolute;
+    right: 4px;
+    top: 28px;
+    width: 16px;
+    height: 10px;
+    background: url('/icons/chevron-down.svg') no-repeat center / 16px 10px;
+  }
+
+  footer .footer-col.open .footer-title::after { transform: rotate(180deg); }
+  footer .footer-links { display: none; }
+  footer .footer-col.open .footer-links { display: block; padding-bottom: 12px; }
+  footer .footer-bottom-wrap { background: var(--dark-color); }
+  footer .footer-bottom { padding: 0 15px 10px; }
+  footer .footer-pay,
+  footer .footer-social { display: none; }
+
+  footer .footer-legal ul {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0 18px;
+    padding: 9px 0 0;
+  }
+
+  footer .footer-legal li { line-height: 34px; height: 34px; }
+  footer .footer-legal a { line-height: 34px; color: var(--color-cream-text); }
+
+  footer .recaptcha-note {
+    display: block;
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    padding: 8px 10px 17px;
+    width: 100%;
+  }
+
+  footer .recaptcha-note a { color: var(--color-cream-text); text-decoration: underline; }
 }
