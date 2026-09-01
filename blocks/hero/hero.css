@@ -42,3 +42,47 @@
   .hero .hero-col-right { padding: 0 10px 10px; }
   .hero .hero-lead-in { margin-top: 0; }
 }
+
+/* ---------- campaign variant (het-vatencollectief; lifted) ---------- */
+.hero.campaign .hero-bg-campaign {
+  height: 631px;
+  background: #fbf6f0;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero.campaign .hero-bg-layer img { object-position: 50% 0%; }
+
+.hero.campaign .hero-campaign-card {
+  position: relative;
+  z-index: 1;
+  width: 720px;
+  background: #fff;
+  border-radius: 32px 32px 0 0;
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.hero.campaign .hero-campaign-card figure { margin: 0; }
+.hero.campaign .hero-campaign-card figure img { width: 100%; height: auto; }
+.hero.campaign .hero-campaign-copy { padding: 0 20px; }
+.hero.campaign .hero-campaign-copy p { margin: 0 0 13px; }
+.hero.campaign .hero-campaign-copy p:first-child { font-size: 18px; }
+.hero.campaign .hero-campaign-copy h1 { font-family: var(--body-font-family); font-size: 18px; line-height: 26px; font-weight: 400; margin: 0 0 13px; }
+.hero.campaign .hero-campaign-copy h1 strong { font-weight: 700; }
+.hero.campaign .hero-campaign-buttons { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; padding: 5px 0; }
+.hero.campaign .hero-campaign-buttons .button-wrapper { margin: 0; }
+.hero.campaign a.button.secondary {
+  background: var(--dark-color);
+  border: 0;
+  color: #fff;
+}
+.hero.campaign .hero-fineprint { font-size: 16px; }
+
+@media (width <= 768px) {
+  .hero.campaign .hero-bg-campaign { height: auto; }
+  .hero.campaign .hero-campaign-card { width: auto; border-radius: 32px; margin: 15px; }
+  .hero.campaign .hero-campaign-buttons { flex-direction: column; align-items: center; gap: 4px; }
+}

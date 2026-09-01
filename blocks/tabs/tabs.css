@@ -1,0 +1,57 @@
+/* tabs — model selection (replica; lifted from hv-lift-1440) */
+
+main .section.tabs-container { background: var(--light-color); padding: 0 10px 38px; }
+
+main .section.tabs-container .default-content-wrapper {
+  box-sizing: border-box;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 60px 0 0;
+  text-align: center;
+}
+
+.tabs { max-width: 1280px; margin: 46px auto 0; }
+.tabs .tabs-nav { list-style: none; margin: 0; padding: 10px 200px 5px 0; text-align: left; }
+.tabs .tabs-nav li { display: inline-block; margin: 0 8px 0 0; background: #fff; border: 1px solid #d9d9d9; }
+
+.tabs .tabs-nav .tab-link {
+  border: 0;
+  background: transparent;
+  padding: 17px 18px;
+  font: 400 16px/22px var(--body-font-family);
+  color: var(--text-color);
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.tabs .tabs-nav li.active { background: var(--dark-color); }
+.tabs .tabs-nav li.active .tab-link { color: #fff; }
+.tabs .tabs-cards { display: flex; gap: 10px; align-items: flex-start; }
+.tabs .model-card { width: 310px; background: #fff; padding-bottom: 42px; }
+.tabs .model-card > * + * { margin-top: 14px; }
+.tabs .model-card figure { margin: 0 0 15px; order: -1; }
+.tabs .model-card { display: flex; flex-direction: column; }
+.tabs .model-card h4 { order: 0; font-size: 16px; line-height: 26px; font-weight: 700; text-align: center; margin: 0; }
+.tabs .model-card figure img { width: 100%; height: auto; display: block; }
+.tabs .model-chips { text-align: center; font-size: 14px; line-height: 26px; color: #a5a753; margin: 0; padding: 0 15px; }
+.tabs .model-chips em { font-style: normal; font-weight: 700; }
+.tabs .model-attrs-wrap { padding: 0 20px; }
+.tabs .model-attrs-title { font-weight: 700; margin: 0 0 6px; }
+.tabs .model-attrs { display: flex; gap: 24px; font-size: 14px; line-height: 26px; }
+.tabs .model-attr strong { display: block; font-weight: 700; }
+.tabs .model-list { margin: 0; padding: 0 20px; list-style: none; font-size: 14px; line-height: 26px; }
+.tabs .model-card p { padding: 0 15px; text-align: center; margin: 0; }
+.tabs .model-attrs-wrap p { padding: 0; text-align: left; }
+
+@media (width <= 768px) {
+  main .section.tabs-container { padding: 0 10px 40px; }
+  main .section.tabs-container .default-content-wrapper { padding-top: 32px; }
+  .tabs { margin-top: 0; }
+  .tabs .tabs-nav { padding: 10px 10px 5px; white-space: nowrap; overflow-x: auto; }
+  .tabs .tabs-cards { display: block; }
+  .tabs .model-card { width: 100%; margin-bottom: 20px; padding-bottom: 20px; }
+}
+
+.tabs .tabs-cta { text-align: right; padding: 10px 0; }
+.tabs .tabs-cta .button-wrapper { display: inline-flex; }

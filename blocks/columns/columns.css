@@ -1,33 +1,17 @@
-.columns > div {
-  display: flex;
-  flex-direction: column;
-}
+/* columns — generic n-up (checks strip variant on het-vatencollectief) */
 
-.columns img {
-  width: 100%;
-}
+.columns .columns-row { display: flex; justify-content: space-between; }
+.columns .columns-col { flex: 1; display: flex; align-items: center; font-size: 14px; line-height: 22px; }
+.columns .columns-col picture { display: inline-flex; }
+.columns .columns-col img { width: 16px; height: 13px; margin-right: 12px; }
+.columns .columns-col a { color: var(--text-color); }
+.columns .columns-col p { margin: 0; display: flex; align-items: center; }
 
-.columns > div > div {
-  order: 1;
-}
+main .section.columns-container { max-width: 1280px; margin: 45px auto 0; padding: 0 20px; box-sizing: border-box; }
 
-.columns > div > .columns-img-col {
-  order: 0;
-}
-
-.columns > div > .columns-img-col img {
-  display: block;
-}
-
-@media (width >= 900px) {
-  .columns > div {
-    align-items: center;
-    flex-direction: unset;
-    gap: 24px;
-  }
-
-  .columns > div > div {
-    flex: 1;
-    order: unset;
-  }
+@media (width <= 768px) {
+  main .section.columns-container { margin-top: 32px; padding: 0 15px; }
+  .columns .columns-row { justify-content: center; }
+  .columns .columns-col { flex: none; }
+  .columns .columns-col + .columns-col { display: none; }
 }

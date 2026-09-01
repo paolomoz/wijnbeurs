@@ -1,18 +1,15 @@
-export default function decorate(block) {
-  const cols = [...block.firstElementChild.children];
-  block.classList.add(`columns-${cols.length}-cols`);
-
-  // setup image columns
+/**
+ * columns — generic n-up row (Block Collection shape; reconstructive).
+ * Authoring rows: one row = one visual row; cells become equal columns.
+ * Used on het-vatencollectief for the icon+link checks strip.
+ */
+export default async function decorate(block) {
   [...block.children].forEach((row) => {
-    [...row.children].forEach((col) => {
-      const pic = col.querySelector('picture');
-      if (pic) {
-        const picWrapper = pic.closest('div');
-        if (picWrapper && picWrapper.children.length === 1) {
-          // picture is only content in column
-          picWrapper.classList.add('columns-img-col');
-        }
-      }
+    row.classList.add('columns-row');
+    [...row.children].forEach((cell) => {
+      cell.classList.add('columns-col');
+      const pic = cell.querySelector('picture, img');
+      if (pic && cell.textContent.trim()) cell.classList.add('columns-col-iconed');
     });
   });
 }

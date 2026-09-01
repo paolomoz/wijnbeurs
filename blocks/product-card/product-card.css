@@ -1,0 +1,109 @@
+/* product-card — commerce tile, wijnbeurs skin (replica; lifted values:
+   white r24 card, cream photo well, 44px maroon price, squared maroon CTA) */
+
+.product-card .product-item-info {
+  background: #fff;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.product-card .product-item-photo {
+  display: block;
+  height: 216px;
+  background: var(--light-color);
+  border-radius: 24px 24px 0 0;
+  padding: 16px;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.product-card .product-image-container { display: inline-block; }
+.product-card .product-item-photo img { width: 279px; height: 174px; display: inline-block; object-fit: contain; }
+.product-card .crobox-medal { display: none; }
+.product-card .product-item-details { padding: 0 16px; }
+
+.product-card .product-item-details-top { display: none; }
+
+.product-card .product-item-name {
+  margin: 8px 0 0;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.product-card .product-item-name a { color: var(--text-color); }
+
+.product-card .product-attr-item {
+  position: relative;
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--text-muted);
+  max-height: 66px;
+  overflow: hidden;
+}
+
+.product-card .product-attr-item::before { display: none; }
+.product-card .product-item-form { padding: 0 16px 16px; margin-top: 12px; }
+.product-card .price-box { display: flex; align-items: flex-start; height: 45px; }
+.product-card .old-price { display: none; }
+.product-card .special-price { margin-left: 0; }
+
+.product-card .special-price .price {
+  font-size: 44px;
+  line-height: 44px;
+  font-weight: 700;
+  color: var(--color-maroon);
+}
+
+.product-card .special-price sup {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  vertical-align: super;
+}
+
+.product-card .product-discount { display: none; }
+
+.product-card .product-item-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  padding-bottom: 0;
+}
+
+.product-card .field-qty select {
+  height: 48px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  padding: 0 30px 0 12px;
+  font: 400 16px/26px var(--body-font-family);
+  color: var(--text-color);
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.product-card .product-item-actions .button-wrapper { margin: 0; }
+.product-card a.button.tocart { padding: 16px 24px; height: 48px; }
+
+@media (width <= 768px) {
+  .product-card { margin-top: 16px; }
+  .product-card .product-item-actions { display: flex; }
+}
+
+/* het-vatencollectief buy-box section: prose left, card right */
+main .section.proefpakket { max-width: 1280px; margin: 0 auto; padding: 12px 20px 0; box-sizing: border-box; }
+main .section.proefpakket { display: flex; gap: 20px; align-items: flex-start; padding-left: 60px; padding-right: 60px; }
+main .section.proefpakket > .default-content-wrapper { flex: 1; }
+main .section.proefpakket > .product-card-wrapper { flex: 0 0 387px; max-width: 387px; }
+main .section.proefpakket h2 { font-family: var(--body-font-family); font-size: 28px; font-weight: 600; line-height: 34px; margin: 0 0 8px; }
+main .section.proefpakket p { margin: 0 0 8px; max-width: 560px; }
+
+@media (width <= 768px) {
+  main .section.proefpakket { display: block; padding: 12px 15px 0; }
+  main .section.proefpakket > .product-card-wrapper { max-width: none; }
+  main .section.proefpakket p { max-width: none; }
+}
