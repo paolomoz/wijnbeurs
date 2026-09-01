@@ -56,7 +56,7 @@
   overflow: hidden;
 }
 
-.hero.campaign .hero-bg-layer img { object-fit: none; object-position: 50% 0%; }
+.hero.campaign .hero-bg-layer img { object-fit: cover; object-position: 50% 0%; }
 
 .hero.campaign .hero-campaign-card {
   position: relative;
