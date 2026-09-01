@@ -14,7 +14,7 @@ main .section.steps-container .default-content-wrapper {
 .steps .icon-wrap { width: 120px; height: 120px; margin: 0 auto; }
 .steps .icon-wrap img { width: 120px; height: 120px; display: block; }
 .steps .steps-col h3 { margin-top: 0; text-align: center; }
-.steps .steps-cap { text-align: center; }
+.steps .steps-cap { text-align: center; min-height: 91px; }
 
 @media (width <= 768px) {
   main .section.steps-container { padding: 40px 15px; }

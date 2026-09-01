@@ -48,8 +48,8 @@
   /* layout */
   --container-max: 1280px;
 
-  /* nav height — usp 48 + header-main 104 + nav bar 51 + 25 gap */
-  --nav-height: 228px;
+  /* nav height — usp 48 + header-main 104 + nav bar 51 + 26 gap (live main y229) */
+  --nav-height: 229px;
 }
 
 /* metric-matched fallbacks (fontTools vs local faces; verified by the CLS probe) */

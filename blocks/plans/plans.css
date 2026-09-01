@@ -14,7 +14,7 @@ main .section.plans-container .default-content-wrapper {
 
 main .section.plans-container .default-content-wrapper h2 { margin-bottom: 20px; }
 
-.plans .subs-inner { background: var(--light-color); padding: 0 113px 20px; }
+.plans .subs-inner { background: var(--light-color); padding: 0 113px 28px; }
 .plans .subs-cards { display: flex; gap: 20px; align-items: flex-start; }
 .plans .subs-slot { width: 497px; }
 
