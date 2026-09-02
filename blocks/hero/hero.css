@@ -81,7 +81,6 @@
 .hero.campaign .hero-campaign-copy h1 strong { font-weight: 700; }
 .hero.campaign .hero-campaign-buttons { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; padding: 5px 0; }
 .hero.campaign .hero-campaign-buttons .button-wrapper { margin: 0; }
-.hero.campaign .hero-campaign-buttons + .hero-campaign-buttons a.button { background: var(--dark-color); }
 .hero.campaign a.button.secondary {
   background: var(--dark-color);
   border: 0;
