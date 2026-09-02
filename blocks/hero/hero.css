@@ -63,7 +63,8 @@
 .hero.campaign .hero-campaign-card {
   position: relative;
   z-index: 1;
-  width: 720px;
+  /* live: width 50% of the full-bleed row (fluid) — 720px is its 1440 resolution */
+  width: 50%;
   background: #fff;
   border-radius: 32px 32px 0 0;
   padding: 10px;
