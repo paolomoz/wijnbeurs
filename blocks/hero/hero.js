@@ -41,11 +41,17 @@ function decorateCampaign(block) {
       return;
     }
     if (cell.querySelector('a.button, strong a, em a')) {
-      const rowEl = document.createElement('div');
-      rowEl.className = 'hero-campaign-buttons';
-      [...cell.querySelectorAll('p')].forEach((pp) => rowEl.append(pp.cloneNode(true)));
-      if (!rowEl.children.length) [...cell.childNodes].forEach((n) => rowEl.append(n.cloneNode(true)));
-      card.append(rowEl);
+      // consecutive button rows join ONE flex group (live model: a single
+      // wrapping row — 2 lines at 1440, 1 line at wide viewports)
+      let rowEl = card.lastElementChild;
+      if (!rowEl || !rowEl.classList.contains('hero-campaign-buttons')) {
+        rowEl = document.createElement('div');
+        rowEl.className = 'hero-campaign-buttons';
+        card.append(rowEl);
+      }
+      const ps = [...cell.querySelectorAll('p')];
+      ps.forEach((pp) => rowEl.append(pp.cloneNode(true)));
+      if (!ps.length) [...cell.childNodes].forEach((n) => rowEl.append(n.cloneNode(true)));
       return;
     }
     if (!cell.textContent.trim()) return;
